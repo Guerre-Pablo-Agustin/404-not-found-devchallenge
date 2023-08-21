@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+main {
+    flex: 1;
+  }
+
+.titulo{
+color: #333;
+font-family: Inconsolata;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.92px;
+text-transform: uppercase;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img_error {
+    width: 40%;
+    margin-right: 20px;
+  }
+  
+  .error {
+    color:  #333;
+    font-family: Space Mono;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.24px;
+  }
+
+ .mensaje_p{
+    font-family: Space Mono;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.84px;
+    width: 35%;
+ }
+
+ .btn{
+     display: flex;
+     justify-content: center;
+    background: var(--gray-1, #333);
+    width: 216px;
+    height: 68px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.49px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+ }
+
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #BDBDBD;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .span_footer{
+    color: #8a8888;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin: .3em;
+  }
+
+  @media (max-width: 500px) {
+    .conteiner {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img_error {
+      width: 100%;
+      margin:20px;
+    }
+  
+    .error {
+      font-size: 40px;
+      text-align: center;
+      color: rgb(16, 20, 20);
+      font-family: Montserrat;
+      
+    }
+  
+    .mensaje_p {
+      width: 60%;
+      font-size: 30px;
+      margin-top: -20px;
+      color: #4F4F4F;
+      font-family: Space Mono; 
+    }
+
+    .mensaje_error {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: -90px;
+      }
+
+
+  }
